@@ -15,7 +15,7 @@ import java.nio.MappedByteBuffer
 import java.nio.channels.FileChannel
 
 class PredictionHelper(
-    private val modelName: String = "rice_stock.tflite",
+    private val modelName: String = BuildConfig.MODEL_NAME,
     val context: Context,
     private val onResult: (String) -> Unit,
     private val onError: (String) -> Unit
